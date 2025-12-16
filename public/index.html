@@ -23,23 +23,6 @@
     </div>
   </div>
 
-  <!-- add pair button -->
-  <div id="outer-add-div">
-    <button id="add-btn">
-      <div id="inner-add-div">
-        <img id="plus-img" src="media/plus.png" alt="Clickable plus icon">
-        <p id="add-btn-text">Add Song Pair</p>
-      </div>
-    </button>
-  </div>
-
-  <!-- pair search bar -->
-  <div id="pair-search-div">
-    <input type="text" id="pair-search" placeholder="Search your pairs">
-    <label for="disable-all-checkbox" style="font-size: 20px; cursor: pointer;">Disable all pairs</label>
-    <input type="checkbox" id="disable-all-checkbox" name="disable-all-checkbox" value="disable">
-  </div>
-
   <!-- modal for when logo is clicked -->
   <div id="info-overlay" class="info-hidden">
     <div id="info-modal">
@@ -63,10 +46,35 @@
     </div>
   </div>
 
+  <!-- add pair button -->
+  <div id="outer-add-div">
+    <button id="add-btn">
+      <div id="inner-add-div">
+        <img id="plus-img" src="media/plus.png" alt="Clickable plus icon">
+        <p id="add-btn-text">Add Song Pair</p>
+      </div>
+    </button>
+  </div>
+
   <!-- modal for when add pair is clicked -->
   <div id="add-pair-overlay" class="add-hidden">
     <div id="add-modal">
       
+    </div>
+  </div>
+
+  <!-- pair search bar -->
+  <div id="pair-search-div">
+    <input type="text" id="pair-search" placeholder="Search your pairs">
+    <label for="disable-all-checkbox" style="font-size: 20px; cursor: pointer;">Disable all pairs</label>
+    <input type="checkbox" id="disable-all-checkbox" name="disable-all-checkbox" value="disable">
+  </div>
+
+  <div id="pair-stack">
+    <div class="pair-div">
+      <div class="first-song">
+
+      </div>
     </div>
   </div>
 </body>

@@ -135,7 +135,7 @@ body {
 }
 
 #plus-img {
-  width: 100px;
+  width: 80px;
   margin-right: 20px;
 }
 
@@ -209,4 +209,21 @@ body {
 
 #disable-all-checkbox:checked {
   background-color: red;
+}
+
+#pair-stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pair-div {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 1000px;
 }
