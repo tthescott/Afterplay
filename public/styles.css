@@ -1,1 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: rgb(20, 20, 20);
+  font-family: Montserrat;
+  color: white;
+  font-weight: bold;
+}
+
+#div-top-bar {
+  display: flex;
+}
+
+#div-title {
+  flex-basis: 50%;
+}
+
+#btn-logo {
+  all: unset;
+  margin: 20px;
+  transition: transform .3s;
+}
+
+#btn-logo:hover {
+  transform: scale(1.05);
+}
+
+#img-logo {
+  width: 250px;
+}
+
+#div-sign-in {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+#p-sign-in-info {
+  font-size: 30px;
+}
+
+#btn-sign-in {
+  all: unset;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid rgba(6, 209, 106);
+  border-radius: 10px;
+  font-size: 20px;
+  transition: transform .3s;
+}
+
+#btn-sign-in:hover {
+  transform: scale(1.05);
+}
+
+#btn-sign-in:active {
+  background-color: rgba(6, 209, 106);
+  color: black;
+}
