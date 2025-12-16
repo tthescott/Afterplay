@@ -11,40 +11,40 @@ body {
   font-weight: bold;
 }
 
-#div-top-bar {
+#top-bar {
   display: flex;
 }
 
-#div-title {
+#logo-div {
   flex-basis: 50%;
 }
 
-#btn-logo {
+#logo-btn {
   all: unset;
   margin: 20px;
   transition: transform .3s;
 }
 
-#btn-logo:hover {
+#logo-btn:hover {
   transform: scale(1.05);
 }
 
-#img-logo {
+#logo-img {
   width: 250px;
 }
 
-#div-sign-in-info {
+#sign-in-div {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-basis: 50%;
 }
 
-#p-sign-in-info {
+#sign-in-text {
   font-size: 30px;
 }
 
-#btn-sign-out {
+#sign-out-btn {
   all: unset;
   margin: 20px;
   padding: 10px;
@@ -54,16 +54,16 @@ body {
   transition: transform .3s;
 }
 
-#btn-sign-out:hover {
+#sign-out-btn:hover {
   transform: scale(1.05);
 }
 
-#btn-sign-out:active {
+#sign-out-btn:active {
   background-color: rgb(6, 209, 106);
   color: black;
 }
 
-#overlay {
+#info-overlay {
   position: fixed;
   inset: 0;
   backdrop-filter: blur(6px);
@@ -79,7 +79,7 @@ body {
   to   { opacity: 1; }
 }
 
-#overlay.hidden {
+#info-overlay.info-hidden {
   display: none;
 }
 
@@ -104,7 +104,61 @@ body {
   font-size: 50px;
 }
 
-#info {
+#info-text {
   margin: 20px;
   font-size: 20px;
+}
+
+#outer-add-div {
+  width: 100%;
+  text-align: center;
+}
+
+#add-btn {
+  all: unset;
+  transition: transform .3s;
+}
+
+#add-btn:hover {
+  transform: scale(1.05);
+}
+
+#inner-add-div {
+  display: flex;
+  align-items: center;
+}
+
+#plus-img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+#add-btn-text {
+  font-size: 30px;
+}
+
+#add-pair-overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-out;
+}
+
+#add-pair-overlay.add-hidden {
+  display: none;
+}
+
+#add-modal {
+  text-align: center;
+  outline: 3px solid rgb(6, 209, 106);
+  border-radius: 15px;
+  width: 1000px;
+  max-width: 90%;
+  background-color: rgb(20, 20, 20);
+  padding: 10px;
+  animation: scaleIn 0.5s ease-out;
 }

@@ -4,28 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Afterplay</title>
+  <link rel="icon" type="image/x-icon" href="media/favicon.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div id="div-top-bar">
-    <div id="div-title">
-      <button id="btn-logo">
-        <img id="img-logo" src="media/logo_trim.png">
+  <!-- top bar -->
+  <div id="top-bar">
+    <div id="logo-div">
+      <button id="logo-btn">
+        <img id="logo-img" src="media/logo_trim.png" alt="Clickable Afterplay logo">
       </button>
     </div>
-    <div id="div-sign-in-info">
-      <p id="p-sign-in-info">Hello, username</p>
-      <button id="btn-sign-out">Sign Out</button>
+    <div id="sign-in-div">
+      <p id="sign-in-text">Hello, username</p>
+      <button id="sign-out-btn">Sign Out</button>
     </div>
   </div>
 
+  <!-- add pair button -->
+  <div id="outer-add-div">
+    <button id="add-btn">
+      <div id="inner-add-div">
+        <img id="plus-img" src="media/plus.png" alt="Clickable plus icon">
+        <p id="add-btn-text">Add Song Pair</p>
+      </div>
+    </button>
+  </div>
+
   <!-- modal for when logo is clicked -->
-  <div id="overlay" class="hidden">
+  <div id="info-overlay" class="info-hidden">
     <div id="info-modal">
       <h1>What is Afterplay?</h1>
-      <div id="info">
+      <div id="info-text">
         <p>
           Do you like when two songs have seamless transitions between them? 
           Do you hate having to open Spotify to queue the next song when the 
@@ -41,6 +53,13 @@
           Pair two songs to get started!
         </p>
       </div>
+    </div>
+  </div>
+
+  <!-- modal for when add pair is clicked -->
+  <div id="add-pair-overlay" class="add-hidden">
+    <div id="add-modal">
+      
     </div>
   </div>
 </body>
