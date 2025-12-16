@@ -1,4 +1,4 @@
-# Afterplay
+<img src="public/media/logo_trim.png" alt="Afterplay logo" style="width: 500px;">
 
 ### Description
 Do you like when songs have seamless transitions between them? I do. I like them so much that I find myself opening Spotify just to queue the next song so I can hear the transition. I hate doing this and I think you do too. **With Afterplay, you can link two songs together, and when the first song plays, the linked song will automatically be added to the queue.**
