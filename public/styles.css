@@ -33,7 +33,7 @@ body {
   width: 250px;
 }
 
-#div-sign-in {
+#div-sign-in-info {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -44,21 +44,67 @@ body {
   font-size: 30px;
 }
 
-#btn-sign-in {
+#btn-sign-out {
   all: unset;
   margin: 20px;
   padding: 10px;
-  border: 2px solid rgba(6, 209, 106);
+  border: 2px solid rgb(6, 209, 106);
   border-radius: 10px;
   font-size: 20px;
   transition: transform .3s;
 }
 
-#btn-sign-in:hover {
+#btn-sign-out:hover {
   transform: scale(1.05);
 }
 
-#btn-sign-in:active {
-  background-color: rgba(6, 209, 106);
+#btn-sign-out:active {
+  background-color: rgb(6, 209, 106);
   color: black;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#overlay.hidden {
+  display: none;
+}
+
+#info-modal {
+  text-align: center;
+  outline: 3px solid rgb(6, 209, 106);
+  border-radius: 15px;
+  width: 1000px;
+  max-width: 90%;
+  background-color: rgb(20, 20, 20);
+  padding: 10px;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); }
+  to   { transform: scale(1); }
+}
+
+#info-modal h1 {
+  margin: 20px;
+  font-size: 50px;
+}
+
+#info {
+  margin: 20px;
+  font-size: 20px;
 }
