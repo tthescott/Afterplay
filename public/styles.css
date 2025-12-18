@@ -197,22 +197,50 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 #pair-search {
   all: unset;
-  border: 2px solid white;
-  padding: 8px;
-  border-radius: 10px;
   font-size: 20px;
   width: 300px;
-  margin-right: 20px;
-  margin-left: 20px;
-  transition: border-color 0.5s ease;
+  margin-right: 5px;
 }
 
-#pair-search:focus {
-  border-color: rgb(6, 209, 106);
+#pair-search-border {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+#x-btn {
+
+}
+
+#x-btn-img {
+
+}
+
+#search-btn {
+  all: unset;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  transition: transform .3s;
+}
+
+#search-btn:hover {
+  transform: scale(1.05);
+}
+
+#search-btn:active {
+  background-color: rgb(6, 209, 106);
+}
+
+#search-img {
+  display: block;
+  height: 30px;
 }
 
 /* ============================================= */
