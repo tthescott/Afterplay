@@ -1,3 +1,5 @@
+/* general */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,10 @@ body {
   color: white;
   font-weight: bold;
 }
+
+/* ====================================== */
+
+/* top bar */
 
 #top-bar {
   display: flex;
@@ -65,6 +71,10 @@ body {
   color: black;
 }
 
+/* =============================================== */
+
+/* info modal */
+
 #info-overlay {
   position: fixed;
   inset: 0;
@@ -113,6 +123,10 @@ body {
   font-size: 20px;
 }
 
+/* ======================================= */
+
+/* add button */
+
 #outer-add-div {
   width: 100%;
   text-align: center;
@@ -143,6 +157,10 @@ body {
   font-size: 30px;
 }
 
+/* ========================================== */
+
+/* add pair modal */
+
 #add-pair-overlay {
   position: fixed;
   inset: 0;
@@ -171,12 +189,14 @@ body {
   cursor: default;
 }
 
+/* ================================================== */
+
+/* pair search */
+
 #pair-search-div {
   display: flex;
-  width: 100%;
   justify-content: center;
   text-align: center;
-  align-items: center;
 }
 
 #pair-search {
@@ -186,7 +206,7 @@ body {
   border-radius: 10px;
   font-size: 20px;
   width: 300px;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-left: 20px;
   transition: border-color 0.5s ease;
 }
@@ -195,28 +215,91 @@ body {
   border-color: rgb(6, 209, 106);
 }
 
-#disable-all-checkbox {
-  all: unset;
-  border: 2px solid white;
-  border-radius: 7px;
-  margin-left: 10px;
-  width: 20px;
-  height: 20px;
-  margin-right: 20px;
-  cursor: pointer;
-  transition: background-color 0.5s ease;
+/* ============================================= */
+
+/* toggle all slider (shout out w3schools)*/
+
+#toggle-all-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 50px;
 }
 
-#disable-all-checkbox:checked {
-  background-color: red;
+.switch {
+  position: relative;
+  /* display: inline-block; */
+  width: 63px;
+  height: 38px;
 }
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(20, 20, 20);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 2px solid white;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(6, 209, 106);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(6, 209, 106);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ====================================================== */
+
+/* pair stack */
 
 #pair-stack {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .pair-div {
